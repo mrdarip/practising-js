@@ -3,7 +3,7 @@ var projectsRoutes = [
 ]
 
 for(let project of projectsRoutes){
-    let card = document.createElement('div')
+    let card = document.createElement('article')
     card.className = 'card'
     card.innerHTML = `
         <h3>${"project.name"}</h3>

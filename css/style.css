@@ -1,0 +1,25 @@
+:root {
+  --text: #060f0d;
+  --background: #f4fbf9;
+  --primary: #55bca4;
+  --secondary: #a39ad7;
+  --accent: #a574c8;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+#projects article {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects {
+  display: flex;
+}

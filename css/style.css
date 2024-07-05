@@ -10,6 +10,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--text);
   background-color: var(--background);
+
+  width: 80%;
+  margin: auto;
 }
 
 #projects article {
@@ -20,7 +23,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-a{
+a {
   background-color: var(--primary);
   color: var(--text);
   padding: 0.5em;
@@ -31,4 +34,6 @@ a{
 
 #projects {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }

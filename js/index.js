@@ -29,8 +29,12 @@ for (let projectRoute of projectsRoutes) {
         <img src="${project["thumbnail"]}" alt="${project["name"]}">
         <h3>${project["name"]}</h3>
         <p>${project["description"]}</p>
-        <a href="${projectRoute + "index.html"}">Link</a>
     `;
+
+      card.onclick = function () {
+        window.location.href = projectRoute + "index.html";
+      };
+      
       document.getElementById("projects").appendChild(card);
     })
     .catch((e) => console.error(e));

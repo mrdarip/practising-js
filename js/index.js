@@ -9,7 +9,7 @@ var projectsRoutes = [
 let launchingOnGithubPages = true;
 
 projectsRoutes = projectsRoutes.map((route) =>
-  "./" + launchingOnGithubPages ? "practising-js/" : "" + route
+  "./" + (launchingOnGithubPages ? "practising-js/" : "") + "projects/"+ route
 );
 
 for (let projectRoute of projectsRoutes) {

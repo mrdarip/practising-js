@@ -26,6 +26,7 @@ for (let projectRoute of projectsRoutes) {
 
       card.className = "card";
       card.innerHTML = `
+        <img src="${project["thumbnail"]}" alt="${project["name"]}">
         <h3>${project["name"]}</h3>
         <p>${project["description"]}</p>
         <a href="${projectRoute + "index.html"}">Link</a>

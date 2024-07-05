@@ -1,19 +1,19 @@
 var projectsRoutes = [
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
-  "../projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
+  "./projects/SampleProject/",
 ];
 
 for (let projectRoute of projectsRoutes) {
@@ -34,7 +34,7 @@ for (let projectRoute of projectsRoutes) {
       card.onclick = function () {
         window.location.href = projectRoute + "index.html";
       };
-      
+
       document.getElementById("projects").appendChild(card);
     })
     .catch((e) => console.error(e));

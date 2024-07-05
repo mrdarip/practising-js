@@ -1,10 +1,16 @@
 var projectsRoutes = [
-  "./practising-js/projects/SampleProject/",
-  "./practising-js/projects/SampleProject/",
-  "./practising-js/projects/SampleProject/",
-  "./projects/SampleProject/",
-  "./projects/SampleProject/",
+  "SampleProject/",
+  "SampleProject/",
+  "SampleProject/",
+  "SampleProject/",
+  "SampleProject/",
 ];
+
+let launchingOnGithubPages = true;
+
+projectsRoutes = projectsRoutes.map((route) =>
+  "./" + launchingOnGithubPages ? "practising-js/" : "" + route
+);
 
 for (let projectRoute of projectsRoutes) {
   fetch(projectRoute + "info.json")

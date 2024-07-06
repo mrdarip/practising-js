@@ -13,8 +13,8 @@ function insertMole() {
   mole.innerText = allEmojis[Math.floor(Math.random() * allEmojis.length)];
   mole.classList.add("mole");
 
-  mole.style.left = `${ Math.random() * 100}%`;
-  mole.style.top = `${ Math.random() * 100}%`;
+  mole.style.left = `calc(${Math.random() * 100}% - 1em)`;
+  mole.style.top = `calc(${Math.random() * 100}% - 1em)`;
 
   gameBoard.appendChild(mole);
 

@@ -19,14 +19,13 @@ header {
 
 main {
   grid-area: main;
-
-  padding: 2em 4em 4em 2em;
 }
 
 p {
-  position: absolute;
+  position: fixed;
   font-size: 2em;
   user-select: none;
+  margin: 0px;
 }
 
 p:hover {

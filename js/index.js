@@ -6,7 +6,7 @@ var projectsRoutes = [
   "SampleProject/",
 ];
 
-let launchingOnGithubPages = true;
+let launchingOnGithubPages = (window.location.hostname === 'mrdarip.github.io');
 
 projectsRoutes = projectsRoutes.map((route) =>
   "../" + (launchingOnGithubPages ? "practising-js/" : "") + "projects/"+ route

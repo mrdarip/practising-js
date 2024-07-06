@@ -1,9 +1,6 @@
 var projectsRoutes = [
   "SampleProject/",
-  "SampleProject/",
-  "SampleProject/",
-  "SampleProject/",
-  "SampleProject/",
+  "Whack-A-Mole/"
 ];
 
 let launchingOnGithubPages = (window.location.hostname === 'mrdarip.github.io');

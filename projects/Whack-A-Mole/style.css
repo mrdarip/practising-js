@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header"
+    "main";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}

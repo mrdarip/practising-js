@@ -19,4 +19,16 @@ header {
 
 main {
   grid-area: main;
+
+  padding: 2em 4em 4em 2em;
+}
+
+p {
+  position: absolute;
+  font-size: 2em;
+  user-select: none;
+}
+
+p:hover {
+  cursor: pointer;
 }

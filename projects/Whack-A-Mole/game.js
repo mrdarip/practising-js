@@ -1,4 +1,4 @@
-const molesEmojis = ["🐀", "🦡", "🐁"];
+const molesEmojis = ["🐀", "🦡", "🐁","🦔"];
 const nonMoleEmojis = ["🕳", "🥔"];
 const allEmojis = [...molesEmojis, ...nonMoleEmojis];
 
@@ -13,8 +13,22 @@ function insertMole() {
   mole.innerText = allEmojis[Math.floor(Math.random() * allEmojis.length)];
   mole.classList.add("mole");
 
-  mole.style.left = `calc(${Math.random() * 100}% - 1em)`;
-  mole.style.top = `calc(${Math.random() * 100}% - 1em)`;
+  let x = Math.random() * 50;
+  let y = Math.random() * 50;
+
+  if(Math.random() > 0.5) {
+    mole.style.left = `${x}%`;
+  }
+  else{
+    mole.style.right = `${x}%`;
+  }
+
+  if(Math.random() > 0.5) {
+    mole.style.top = `${y}%`;
+  }else{
+    mole.style.bottom = `${y}%`;
+  }
+  
 
   gameBoard.appendChild(mole);
 

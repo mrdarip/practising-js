@@ -1,4 +1,4 @@
-var projectsRoutes = ["SampleProject/", "Whack-A-Mole/"];
+var projectsRoutes = ["SampleProject", "Whack-A-Mole", "Jokes"];
 
 let launchingOnGithubPages = window.location.hostname === "mrdarip.github.io";
 
@@ -7,7 +7,8 @@ projectsRoutes = projectsRoutes.map(
     "../" +
     (launchingOnGithubPages ? "practising-js/" : "") +
     "projects/" +
-    route
+    route +
+    "/"
 );
 
 projectsRoutes.forEach(function (projectRoute, i) {

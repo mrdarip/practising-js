@@ -10,7 +10,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--background);
   color: var(--text);
-  width: 80%;
+  width: 50%;
   margin: auto;
   padding: 0;
 }
@@ -18,41 +18,37 @@ body {
 main {
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr 1fr;
-  gap: 1em 2em;
+  gap: 1em 0px;
   grid-template-areas:
-    "setup setup"
-    "skip show"
-    "delivery delivery";
+    "setup"
+    "next"
+    "delivery";
 }
 
-section{
-    text-align: center;
+section {
+  text-align: center;
 }
 
 #setup {
   grid-area: setup;
 }
-#skip {
-  grid-area: skip;
-  background-color: var(--secondary);
-}
-#show {
-  grid-area: show;
+
+#next {
+  grid-area: next;
   background-color: var(--primary);
   color: var(--background);
+  padding: 1.5em;
+  border-radius: 1.5em;
 }
 
-#skip,#show{
-    padding: 1.5em;
-    border-radius: 1.5em;
-}
-#show:hover, #skip:hover{
+next:hover {
   background-color: var(--accent);
   color: var(--text);
   cursor: pointer;
 }
+
 #delivery {
   grid-area: delivery;
   display: none;

@@ -1,15 +1,16 @@
-var projectsRoutes = [
-  "SampleProject/",
-  "Whack-A-Mole/"
-];
+var projectsRoutes = ["SampleProject/", "Whack-A-Mole/"];
 
-let launchingOnGithubPages = (window.location.hostname === 'mrdarip.github.io');
+let launchingOnGithubPages = window.location.hostname === "mrdarip.github.io";
 
-projectsRoutes = projectsRoutes.map((route) =>
-  "../" + (launchingOnGithubPages ? "practising-js/" : "") + "projects/"+ route
+projectsRoutes = projectsRoutes.map(
+  (route) =>
+    "../" +
+    (launchingOnGithubPages ? "practising-js/" : "") +
+    "projects/" +
+    route
 );
 
-for (let projectRoute of projectsRoutes) {
+projectsRoutes.forEach(function (projectRoute, i) {
   fetch(projectRoute + "info.json")
     .then((res) => res.text())
     .then((text) => {
@@ -24,6 +25,8 @@ for (let projectRoute of projectsRoutes) {
         <p>${project["description"]}</p>
     `;
 
+      card.style.order = i;
+
       card.onclick = function () {
         window.location.href = projectRoute + "index.html";
       };
@@ -31,4 +34,4 @@ for (let projectRoute of projectsRoutes) {
       document.getElementById("projects").appendChild(card);
     })
     .catch((e) => console.error(e));
-}
+});

@@ -4,6 +4,9 @@ const allEmojis = [...molesEmojis, ...nonMoleEmojis];
 
 const gameBoard = document.getElementsByTagName("main")[0];
 
+var points;
+setPoints(0);
+
 insertMole();
 insertMole();
 insertMole();
@@ -35,9 +38,11 @@ function insertMole() {
   mole.addEventListener("click", () => {
     if (molesEmojis.includes(mole.innerText)) {
       mole.remove();
+      addPoints(1);
       insertMole();
     } else {
-      alert("Game Over");
+      alert("Game Over\nYour score: " + points);
+      setPoints(0);
       location.reload();
     }
   });
@@ -48,4 +53,13 @@ function insertMole() {
       insertMole();
     }
   }, 2000 + Math.random() * 2000);
+}
+
+function setPoints(p) {
+  points = p;
+  document.getElementById("points").innerText = points;
+}
+
+function addPoints(p) {
+  setPoints(points + p);
 }

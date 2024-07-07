@@ -11,10 +11,23 @@ body {
   grid-template-areas:
     "header"
     "main";
+
+  background-color: #f8fbf4;
+  color: #0f1409;
 }
 
 header {
   grid-area: header;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 1em;
+  padding: 0px;
+  text-align: center;
+  user-select: none;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main {

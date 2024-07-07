@@ -15,7 +15,7 @@ show.addEventListener('click', () => {
 });
 
 function refreshJoke() {
-    fetch('https://v2.jokeapi.dev/joke/Any?type=twopart')
+    fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,racist,sexist,explicit&type=twopart')
         .then(response => response.json())
         .then(data => {
             skip.innerHTML = skipTexts[Math.floor(Math.random() * skipTexts.length)];

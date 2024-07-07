@@ -55,4 +55,5 @@ section{
 }
 #delivery {
   grid-area: delivery;
+  display: none;
 }

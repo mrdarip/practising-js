@@ -1,0 +1,58 @@
+:root {
+  --text: #f2daec;
+  --background: #1c0a19;
+  --primary: #d78fc7;
+  --secondary: #812e42;
+  --accent: #c6616c;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  width: 80%;
+  margin: auto;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content 1fr 1fr;
+  gap: 1em 2em;
+  grid-template-areas:
+    "setup setup"
+    "skip show"
+    "delivery delivery";
+}
+
+section{
+    text-align: center;
+}
+
+#setup {
+  grid-area: setup;
+}
+#skip {
+  grid-area: skip;
+  background-color: var(--secondary);
+}
+#show {
+  grid-area: show;
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+#skip,#show{
+    padding: 1.5em;
+    border-radius: 1.5em;
+}
+#show:hover, #skip:hover{
+  background-color: var(--accent);
+  color: var(--text);
+  cursor: pointer;
+}
+#delivery {
+  grid-area: delivery;
+}

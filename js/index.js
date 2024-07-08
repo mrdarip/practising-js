@@ -1,18 +1,18 @@
-var projectsRoutes = ["SampleProject", "Whack-A-Mole", "Jokes"];
+var projectsNames = ["SampleProject", "Whack-A-Mole", "Jokes"];
 
 let launchingOnGithubPages = window.location.hostname === "mrdarip.github.io";
 
-projectsRoutes = projectsRoutes.map(
-  (route) =>
+projectsNames = projectsNames.map(
+  (ProjectName) =>
     "../" +
     (launchingOnGithubPages ? "practising-js/" : "") +
     "projects/" +
-    route +
+    ProjectName +
     "/"
 );
 
 var cards = [];
-projectsRoutes.forEach(function (projectRoute, i) {
+projectsNames.forEach(function (projectRoute, i) {
   fetch(projectRoute + "info.json")
     .then((res) => res.text())
     .then((text) => {
@@ -27,7 +27,6 @@ projectsRoutes.forEach(function (projectRoute, i) {
         <h3>${project["name"]}</h3>
         <p class="createdDate">${project["createdDate"]}</p>
         <p>${project["description"]}</p>
-        
     `;
 
       card.style.order = i;
@@ -41,6 +40,8 @@ projectsRoutes.forEach(function (projectRoute, i) {
     .catch((e) => console.error(e));
 });
 
+sortByChildText(2, false);
+
 let orderForm = document.getElementById("order");
 addEventListener("change", function () {
   let selected = orderForm.selectedIndex;
@@ -49,35 +50,37 @@ addEventListener("change", function () {
 
   switch (options[selected].value) {
     case "AZ":
-      cards.sort((a, b) => {
-        return sortByChildText(a, b, 1, true);
-      });
+      sortByChildText(1, true);
       break;
     case "ZA":
-      cards.sort((a, b) => {
-      return sortByChildText(a, b, 1, false);
-      });
+      sortByChildText(1, false);
       break;
     case "newest":
-      cards.sort((a, b) => {
-        return sortByChildText(a, b, 2, false);
-      });
+      sortByChildText(2, false);
       break;
     case "oldest":
-      cards.sort((a, b) => {
-        return sortByChildText(a, b, 2, true);
-      });
+      sortByChildText(2, true);
       break;
   }
 
   updateCardeOrder();
 });
 
-function sortByChildText(a, b, index, asc) {
+function sortByChildText(id, asc) {
+  cards.sort((a, b) => {
+    return compareChildrenText(a, b, id, asc);
+  });
+}
+
+function compareChildrenText(a, b, index, asc) {
   if (asc) {
-    return a.children[index].innerText.localeCompare(b.children[index].innerText);
+    return a.children[index].innerText.localeCompare(
+      b.children[index].innerText
+    );
   } else {
-    return b.children[index].innerText.localeCompare(a.children[index].innerText);
+    return b.children[index].innerText.localeCompare(
+      a.children[index].innerText
+    );
   }
 }
 

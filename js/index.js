@@ -12,35 +12,43 @@ projectsNames = projectsNames.map(
 );
 
 var cards = [];
-projectsNames.forEach(function (projectRoute, i) {
-  fetch(projectRoute + "info.json")
-    .then((res) => res.text())
-    .then((text) => {
-      project = JSON.parse(text);
+async function fetchCards() {
+  let fetchPromises = projectsNames.map((projectRoute, i) => {
+    return fetch(projectRoute + "info.json")
+      .then((res) => res.text())
+      .then((text) => {
+        project = JSON.parse(text);
 
-      let card = document.createElement("article");
-      cards.push(card);
+        let card = document.createElement("article");
+        cards.push(card);
 
-      card.className = "card";
-      card.innerHTML = `
+        card.className = "card";
+        card.innerHTML = `
         <img src="${project["thumbnail"]}" alt="${project["name"]}">
         <h3>${project["name"]}</h3>
         <p class="createdDate">${project["createdDate"]}</p>
         <p>${project["description"]}</p>
     `;
 
-      card.style.order = i;
+        card.style.order = i;
 
-      card.onclick = function () {
-        window.location.href = projectRoute + "index.html";
-      };
+        card.onclick = function () {
+          window.location.href = projectRoute + "index.html";
+        };
 
-      document.getElementById("projects").appendChild(card);
-    })
-    .catch((e) => console.error(e));
+        document.getElementById("projects").appendChild(card);
+      })
+      .catch((e) => console.error(e));
+  });
+  return Promise.all(fetchPromises);
+}
+
+fetchCards().then(() => {
+  console.log(cards[0].children[2].innerText);
+  sortByChildText(2, false);
+  updateCardeOrder();
+  console.log(cards[0].children[2].innerText);
 });
-
-sortByChildText(2, false);
 
 let orderForm = document.getElementById("order");
 addEventListener("change", function () {

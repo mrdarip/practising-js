@@ -37,16 +37,23 @@ section {
 
 #next {
   grid-area: next;
-  background-color: var(--primary);
-  color: var(--background);
+
+  box-shadow: 0.2em 0.2em 10px var(--secondary);
+
+  transition: transform 0.1s, box-shadow 0.1s;
+  background-color: var(--accent);
+  color: var(--text);
   padding: 1.5em;
   border-radius: 1.5em;
 }
 
-next:hover {
-  background-color: var(--accent);
-  color: var(--text);
+#next:hover {
   cursor: pointer;
+
+  transform: translateY(-0.2rem);
+  box-shadow: 0.2em 0.4rem 10px var(--secondary);
+
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 #delivery {

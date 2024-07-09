@@ -1,5 +1,6 @@
 var pokemonImage = document.getElementById("pokemonImage");
 var pokemonInput = document.getElementById("pokemonInput");
+var pokemonName = document.getElementById("pokemonName");
 
 var currentPokemon = null;
 
@@ -13,6 +14,7 @@ getRandomPokemon();
 
 pokemonImage.addEventListener("click", function () {
   this.style.filter = "brightness(100%)";
+  pokemonName.innerText = currentPokemon.name;
   setTimeout(getRandomPokemon, 2000); // Also, removed the immediate invocation of getRandomPokemon()
 });
 
@@ -32,6 +34,7 @@ function getRandomPokemon() {
     .then((response) => response.json())
     .then((data) => {
       pokemonImage.style.filter = "brightness(0%)";
+      pokemonName.innerText = "";
       pokemonImage.src = data.sprites.other["official-artwork"].front_default;
       currentPokemon = data;
     });

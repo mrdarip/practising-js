@@ -1,4 +1,4 @@
-var projectsNames = ["SampleProject", "Whack-A-Mole", "Jokes"];
+var projectsNames = ["SampleProject", "Whack-A-Mole", "Jokes","WhosThatPokemon"];
 
 let launchingOnGithubPages = window.location.hostname === "mrdarip.github.io";
 

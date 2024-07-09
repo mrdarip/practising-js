@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Who's That Pokémon?</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <h1>Who's That Pokémon?</h1>
+    <p>
+      Can you guess who's that Pokémon? Click on the image to reveal the answer.
+    </p>
+    <img
+      id="pokemonImage"
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/777.png"
+      alt="Who's that Pokémon?"
+      onclick="this.style.filter = 'brightness(0%)';"
+    />
+    <p id="pokemonName"></p>
+
+    <script src="./script.js" async defer></script>
+  </body>
 </html>

@@ -1,6 +1,7 @@
 var pokemonImage = document.getElementById("pokemonImage");
 var pokemonInput = document.getElementById("pokemonInput");
 var pokemonName = document.getElementById("pokemonName");
+var numPokemonsLeft = document.getElementById("left");
 
 var currentPokemon = null;
 
@@ -11,6 +12,7 @@ for (var i = 1; i <= sumPokemons; i++) {
 }
 
 getRandomPokemon();
+updateNumPokemonsLeft();
 
 pokemonImage.addEventListener("click", function () {
   this.style.filter = "brightness(100%)";
@@ -20,9 +22,9 @@ pokemonImage.addEventListener("click", function () {
 
 pokemonInput.addEventListener("input", function () {
   if (pokemonInput.value.toLowerCase() === currentPokemon.name) {
-    pokemonInput.value = "";
     freePokemons.splice(freePokemons.indexOf(currentPokemon.id), 1);
     getRandomPokemon();
+    updateNumPokemonsLeft();
   }
 });
 
@@ -34,8 +36,15 @@ function getRandomPokemon() {
     .then((response) => response.json())
     .then((data) => {
       pokemonImage.style.filter = "brightness(0%)";
+      
       pokemonName.innerText = "";
+      pokemonInput.value = "";
+
       pokemonImage.src = data.sprites.other["official-artwork"].front_default;
       currentPokemon = data;
     });
+}
+
+function updateNumPokemonsLeft() {
+  numPokemonsLeft.innerText = freePokemons.length;
 }

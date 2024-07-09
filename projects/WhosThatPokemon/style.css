@@ -1,0 +1,12 @@
+section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+img{
+    width: 50%;
+    filter: brightness(0);
+}

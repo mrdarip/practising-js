@@ -2,6 +2,7 @@ var pokemonImage = document.getElementById("pokemonImage");
 var pokemonInput = document.getElementById("pokemonInput");
 var pokemonName = document.getElementById("pokemonName");
 var numPokemonsLeft = document.getElementById("left");
+var foundPokemons = document.getElementById("found");
 
 var currentPokemon = null;
 
@@ -22,6 +23,7 @@ pokemonImage.addEventListener("click", function () {
 
 pokemonInput.addEventListener("input", function () {
   if (pokemonInput.value.toLowerCase() === currentPokemon.name) {
+    addFoundPokemon(currentPokemon);
     freePokemons.splice(freePokemons.indexOf(currentPokemon.id), 1);
     getRandomPokemon();
     updateNumPokemonsLeft();
@@ -36,7 +38,7 @@ function getRandomPokemon() {
     .then((response) => response.json())
     .then((data) => {
       pokemonImage.style.filter = "brightness(0%)";
-      
+
       pokemonName.innerText = "";
       pokemonInput.value = "";
 
@@ -47,4 +49,13 @@ function getRandomPokemon() {
 
 function updateNumPokemonsLeft() {
   numPokemonsLeft.innerText = freePokemons.length;
+}
+
+function addFoundPokemon(pokemon) {
+  var foundPokemon = document.createElement("div");
+  foundPokemon.innerHTML = `
+    <img src="${pokemon.sprites.other["official-artwork"].front_default}" alt="${pokemon.name}">
+    <h3>${pokemon.name}</h3>
+  `;
+  foundPokemons.appendChild(foundPokemon);
 }

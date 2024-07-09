@@ -6,16 +6,14 @@
   --accent: #d4c46e;
 }
 
-article {
-  display: inline;
+#found {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
 }
 
-img {
-  width: 100%;
-  filter: brightness(0);
-}
-
-section {
+#finding {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
@@ -30,6 +28,9 @@ section {
 
 #pokemonImage {
   grid-area: pokemonImage;
+
+  width: 100%;
+  filter: brightness(0);
 }
 
 #pokemonName {
@@ -64,4 +65,13 @@ input {
 input:focus {
   outline: none;
   border: 1px solid var(--secondary);
+}
+
+#found div{
+    width: min-content;
+}
+
+#found img {
+  width: 100%;
+  height: auto;
 }

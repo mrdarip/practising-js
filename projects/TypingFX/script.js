@@ -1,25 +1,26 @@
-var myInput = document.getElementById("myInput");
+for(let input of document.querySelectorAll("input")){
+  input.addEventListener("input", function(){
+    let text = input.value;
+    if(text.length === 0) return;
 
-myInput.addEventListener("input", function () {
-  let text = myInput.value;
-  if (text.length === 0) return;
+    createCharParticle(text[text.length - 1], this);
+  });
+}
 
-  createCharParticle(text[text.length - 1]);
-});
 
-function createCharParticle(character) {
+function createCharParticle(character, parent) {
   let charParticle = document.createElement("div");
   charParticle.innerText = character;
 
-  setGravityEffect(charParticle);
+  setGravityEffect(charParticle, parent);
 
   document.body.appendChild(charParticle);
 }
 
-function setGravityEffect(node) {
+function setGravityEffect(node, parent) {
   node.style.position = "absolute";
-  node.style.left = myInput.offsetLeft + myInput.offsetWidth + "px";
-  node.style.top = myInput.offsetTop + myInput.offsetHeight + "px";
+  node.style.left = parent.offsetLeft + parent.offsetWidth + "px";
+  node.style.top = parent.offsetTop + parent.offsetHeight + "px";
 
   let lifeTime = 0;
   let xSpeed = 1 + Math.random() * 2;

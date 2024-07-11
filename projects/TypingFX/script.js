@@ -14,12 +14,19 @@ function createCharParticle(character) {
   charParticle.style.left = (myInput.offsetLeft+myInput.offsetWidth) + "px";
   charParticle.style.top = (myInput.offsetTop + myInput.offsetHeight) + "px";
   document.body.appendChild(charParticle);
+  let lifeTime = 0;
+  let xSpeed = 1 + Math.random() * 2;
 
   let liveLoop = setInterval(function () {
     let x = parseInt(charParticle.style.left);
     let y = parseInt(charParticle.style.top);
-    charParticle.style.left = x - 1 + "px";
-    charParticle.style.top = y + 1 + "px";
+
+    let a = lifeTime / 100;
+
+    charParticle.style.left = x + xSpeed + "px";
+    charParticle.style.top = y + a + "px";
+
+    lifeTime += 1000 / 60;
   }, 1000 / 60);
 
   setTimeout(function () {

@@ -11,7 +11,7 @@ function createCharParticle(character) {
   let charParticle = document.createElement("div");
   charParticle.innerText = character;
 
-  setGravityEffect(charParticle);
+  setFollowPathEffect(charParticle, "M 100 300 Q 150 150 200 300 Q 250 400 300 300 Q 350 150 400 300 C 450 550 400 500 350 450 C 250 300 500 250 600 300 A 50 50 0 1 1 550 400 ");
 
   document.body.appendChild(charParticle);
 }
@@ -40,4 +40,13 @@ function setGravityEffect(node) {
     window.clearInterval(liveLoop);
     node.remove();
   }, 5000);
+}
+
+function setFollowPathEffect(node, path){
+  node.style.position= "absolute";
+  node.style.top= "0%";
+  node.style.left= "0%";
+  node.style.offsetPath = `path("${path}")`;
+
+  node.style.animation= "travel 2s infinite alternate linear";
 }

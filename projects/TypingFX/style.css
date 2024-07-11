@@ -1,8 +1,19 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 10%;
+}
+
+/* area in which we want the particles to appear, and hide if are out of it*/
+body {
+  overflow: hidden;
+}
+
 @keyframes travel {
-    from {
-      offset-distance: 0%;
-    }
-    to {
-      offset-distance: 100%;
-    }
+  from {
+    offset-distance: 0%;
   }
+  to {
+    offset-distance: 100%;
+  }
+}

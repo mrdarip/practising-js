@@ -33,13 +33,13 @@ function setGravityEffect(node) {
     node.style.left = x + xSpeed + "px";
     node.style.top = y + a + "px";
 
-    lifeTime += 1000 / 60;
-  }, 1000 / 60);
+    lifeTime += 1000 / 25;
+  }, 1000 / 25);
 
   setTimeout(function () {
     window.clearInterval(liveLoop);
     node.remove();
-  }, 5000);
+  }, 1500);
 }
 
 function setFollowPathEffect(node, path){

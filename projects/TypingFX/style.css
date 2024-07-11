@@ -1,18 +1,21 @@
 :root {
-  --text: #ebefec;
-  --background: #101813;
-  --primary: #abcdb7;
-  --secondary: #346646;
-  --accent: #63bc83;
+  --text: #0a0a09;
+  --background: #fafaf9;
+  --primary: #939880;
+  --secondary: #bdc2ad;
+  --accent: #afb593;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  margin: 10%;
+  margin: 0px;
 
   background-color: var(--background);
   color: var(--text);
+
+  background-image: url(https://images.unsplash.com/photo-1541580103-eb54f7a758be);
+  background-size: cover;
 }
 
 /* area in which we want the particles to appear, and hide if are out of it*/
@@ -20,21 +23,40 @@ body {
   overflow: hidden;
 }
 
-input{
-    background-color: var(--primary);
-    color: var(--background);
-    border: none;
-    padding: 0.5em;
-    font-size: 1em;
-    border-radius: 1em;
+input {
+  box-sizing: border-box;
+  background-color: var(--primary);
+  color: var(--background);
+  border: none;
+  padding: 0.75em;
 
-    box-shadow: 0.1em 0.1em 0.5em var(--accent);
+  font-size: 1em;
+  border-radius: 1em;
+  width: 100%;
+
+  box-shadow: 0.1em 0.1em 0.5em var(--accent);
 }
 
-input:focus{
-    outline: none;
-    background-color: var(--secondary);
-    color: var(--text);
+input:focus {
+  outline: none;
+  background-color: var(--secondary);
+  color: var(--text);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+  width: 50%;
+  margin: auto;
+  padding: 1em;
+
+  border-radius: calc(1em + 0.75em);
+
+  background-color: var(--background);
 }
 
 @keyframes travel {

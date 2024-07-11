@@ -1,26 +1,36 @@
 :root {
-  --text: #0a0a09;
-  --background: #fafaf9;
-  --primary: #939880;
-  --secondary: #bdc2ad;
-  --accent: #afb593;
+  --text: #060608;
+  --background: #f3f4f6;
+  --primary: #7b809d;
+  --secondary: #b6adc2;
+  --accent: #a28fac;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  margin: 0px;
+  margin: 0;
 
   background-color: var(--background);
   color: var(--text);
 
-  background-image: url(https://images.unsplash.com/photo-1541580103-eb54f7a758be);
+  background-image: url(https://images.unsplash.com/photo-1514477917009-389c76a86b68);
   background-size: cover;
+}
+
+*{
+  font-family: 'Roboto', sans-serif;
 }
 
 /* area in which we want the particles to appear, and hide if are out of it*/
 body {
   overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 0.5em 0;
 }
 
 input {
@@ -29,6 +39,7 @@ input {
   color: var(--background);
   border: none;
   padding: 0.75em;
+  margin: 0.5em 0 1em 0;
 
   font-size: 1em;
   border-radius: 1em;
@@ -37,21 +48,36 @@ input {
   box-shadow: 0.1em 0.1em 0.5em var(--accent);
 }
 
+input::placeholder {
+  color: var(--background);
+}
+
 input:focus {
   outline: none;
   background-color: var(--secondary);
   color: var(--text);
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
+button{
+  box-sizing: border-box;
+  background-color: var(--accent);
+  color: var(--background);
+  border: none;
+  padding: 0.75em;
+  margin: 0;
 
-  width: 50%;
-  margin: auto;
+  font-size: 1em;
+  border-radius: 1em;
+  width: 100%;
+
+  box-shadow: 0.1em 0.1em 0.5em var(--accent);
+}
+
+main {
+  
+
+  width: 40%;
+  margin: 2em auto;
   padding: 1em;
 
   border-radius: calc(1em + 0.75em);

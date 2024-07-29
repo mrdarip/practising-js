@@ -15,11 +15,7 @@ fetch(presentationUrl)
     .then(response => response.json())
     .then(data => {
         presentation = data;
-
-        var generalData = document.createElement("div");
-        generalData.innerHTML = "<p> Style:" + JSON.stringify(data.style, null, 2); + "</p>";
-        document.body.appendChild(generalData);
-
+        setStyles();
         setSlide(slideNumber);
     });
 
@@ -40,4 +36,9 @@ function nextSlide(){
 function previousSlide(){
     slideNumber--;
     setSlide(slideNumber);
+}
+
+function setStyles(){
+    document.body.style.backgroundColor = presentation.style.backgroundColor;
+    document.body.style.color = presentation.style.color;
 }

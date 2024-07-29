@@ -23,6 +23,7 @@ fetch(presentationUrl)
 
     function setSlide(slideNumber){
         var slide = presentation.slides[slideNumber];
+        document.title = slide.title;
         slideTitle.innerHTML = slide.title;
         slideContent.innerHTML = slide.content;
         slideImage.src = slide.image;

@@ -3,6 +3,11 @@ var url = new URL(window.location.href);
 var presentationUrl = url.searchParams.get("presentationUrl");
 
 var presentation
+
+const slideTitle = document.getElementById("slideTitle");
+const slideContent = document.getElementById("slideContent");
+const slideImage = document.getElementById("slideImage");
+
 // Load the presentation json
 fetch(presentationUrl)
     .then(response => response.json())
@@ -18,9 +23,7 @@ fetch(presentationUrl)
 
     function setSlide(slideNumber){
         var slide = presentation.slides[slideNumber];
-
-        var slideElement = document.createElement("div");
-        slideElement.classList.add("slide");
-        slideElement.innerHTML = "<h2>" + slide.title + "</h2>" + "<p>" + slide.content + "</p>" + "<img src='" + slide.image + "'/>";
-        document.body.appendChild(slideElement);
+        slideTitle.innerHTML = slide.title;
+        slideContent.innerHTML = slide.content;
+        slideImage.src = slide.image;
     }

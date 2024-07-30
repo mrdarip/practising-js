@@ -45,6 +45,18 @@ LAYOUTS
       "slideTitle slideImage"
       "slideContent slideImage"
       "prevButton nextButton"; 
-  }
+}
+
+.image-right-alt {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: min-content 1fr; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+      "slideTitle slideTitle"
+      "slideContent slideImage"
+      "prevButton nextButton"; 
+}
 
   

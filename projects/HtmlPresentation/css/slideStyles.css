@@ -39,11 +39,11 @@ main{
 
 #slideContent{
     font-family: var(--secondary-font);
-    color: var(--secondary);
+    color: var(--text);
 }
 
 #nextButton, #prevButton{
-    background-color: var(--accent);
+    background-color: var(--secondary);
     color: var(--background);
     border: none;
     border-radius: 1em;
@@ -52,7 +52,7 @@ main{
 }
 
 #nextButton:hover, #prevButton:hover{
-    background-color: var(--primary);
+    background-color: var(--accent);
 }
 
 /* ======

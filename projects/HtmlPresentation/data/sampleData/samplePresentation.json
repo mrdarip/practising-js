@@ -26,8 +26,8 @@
                 "primary": "#5b3dcb",
                 "secondary": "#9f8cea",
                 "accent": "#7253ed",
-                "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
-                "secondaryFont": "'Courier New', Courier, monospace"
+                "primaryFont": "Tahoma, Geneva, sans-serif",
+                "secondaryFont": "Trebuchet MS, sans-serif"
             }
         },
         {
@@ -42,7 +42,7 @@
                 "secondary": "#95c4df",
                 "accent": "#6d99d2",
                 "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
-                "secondaryFont": "'Courier New', Courier, monospace"
+                "secondaryFont": "Brush Script MT, Brush Script Std, cursive"
             }
         },
         {
@@ -56,8 +56,8 @@
                 "primary": "#42c5b5",
                 "secondary": "#95c4df",
                 "accent": "#6d99d2",
-                "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
-                "secondaryFont": "'Courier New', Courier, monospace"
+                "primaryFont": "Brush Script MT, Brush Script Std, cursive",
+                "secondaryFont": "Garamond, serif"
             }
         },
         {
@@ -71,8 +71,8 @@
                 "primary": "#2722e2",
                 "secondary": "#ed7c89",
                 "accent": "#eaac61",
-                "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
-                "secondaryFont": "'Courier New', Courier, monospace"
+                "primaryFont": "Georgia, serif",
+                "secondaryFont": "Garamond, serif"
             }
         },
         {
@@ -101,7 +101,7 @@
                 "primary": "#bc8147",
                 "secondary": "#e2bd98",
                 "accent": "#dd9a58",
-                "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
+                "primaryFont": "Courier New, Courier, monospace",
                 "secondaryFont": "'Courier New', Courier, monospace"
             }
         }

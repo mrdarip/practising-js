@@ -100,7 +100,7 @@ LAYOUTS
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 10em 1fr; 
+    grid-template-rows: 1fr min-content min-content; 
     gap: 1em 1em; 
     grid-template-areas: 
       "slideImage slideImage"
@@ -112,7 +112,7 @@ LAYOUTS
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 10em 1fr; 
+    grid-template-rows: 1fr min-content min-content;
     gap: 1em 1em; 
     grid-template-areas: 
       "slideImage slideImage"

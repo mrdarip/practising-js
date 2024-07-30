@@ -94,3 +94,16 @@ LAYOUTS
       "slideTitle slideContent"
       "prevButton nextButton"; 
 }
+
+.image-top-title-top {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 10em 1fr; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+      "slideImage slideImage"
+      "slideTitle slideTitle"
+      "slideContent slideContent"
+      "prevButton nextButton"; 
+}

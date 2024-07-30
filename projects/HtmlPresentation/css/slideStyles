@@ -1,0 +1,11 @@
+:root{
+    /* default colors */
+    --text: #090706;
+    --background: #faf9f7;
+    --primary: #b08757;
+    --secondary: #d5b692;
+    --accent: #d3a673;
+
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+}

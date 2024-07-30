@@ -42,6 +42,12 @@ function previousSlide(){
 }
 
 function setStyles(){
-    document.body.style.backgroundColor = presentation.style.backgroundColor;
-    document.body.style.color = presentation.style.color;
+    var r = document.querySelector(':root');
+
+    // set colors
+    r.style.setProperty('--text', presentation.styles.text);
+    r.style.setProperty('--background', presentation.styles.background);
+    r.style.setProperty('--primary', presentation.styles.primary);
+    r.style.setProperty('--secondary', presentation.styles.secondary);
+    r.style.setProperty('--accent', presentation.styles.accent);
 }

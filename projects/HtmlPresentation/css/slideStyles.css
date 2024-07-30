@@ -19,6 +19,11 @@ body{
     box-sizing: border-box;
 }
 
+main{
+    min-height: 80vh;
+    padding: 10vh 10%;
+}
+
 #slideImage{
     width: 100%;
     height: 100%;

@@ -9,6 +9,7 @@ var slideNumber = 0;
 const slideTitle = document.getElementById("slideTitle");
 const slideContent = document.getElementById("slideContent");
 const slideImage = document.getElementById("slideImage");
+const slideSurface = document.getElementById("slideSurface");
 
 // Load the presentation json
 fetch(presentationUrl)
@@ -26,6 +27,8 @@ function setSlide(slideNumber){
     slideTitle.innerHTML = slide.title;
     slideContent.innerHTML = slide.content;
     slideImage.src = slide.image;
+
+    slideSurface.className = slide.layout;
 }
 
 function nextSlide(){

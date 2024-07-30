@@ -36,11 +36,11 @@
             "image": "https://images.unsplash.com/photo-1587893904933-5b23fefaea6d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "layout": "image-top-title-top",
             "style": {
-                "text": "#030b0b",
-                "background": "#f5fcfc",
-                "primary": "#42c5b5",
-                "secondary": "#95c4df",
-                "accent": "#6d99d2",
+                "text": "#edefee",
+                "background": "#090b0a",
+                "primary": "#adc2b8",
+                "secondary": "#466455",
+                "accent": "#83ad98",
                 "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
                 "secondaryFont": "Brush Script MT, Brush Script Std, cursive"
             }

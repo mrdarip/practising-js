@@ -4,33 +4,57 @@
             "title": "Slide 1",
             "content": "This is the content of slide 1",
             "image": "https://www.w3schools.com/w3images/fjords.jpg",
-            "layout": "image-right"
+            "layout": "image-right",
+            "style": {
+                "text": "#999999",
+                "background": "#f4fbf9",
+                "primary": "#55bca4",
+                "secondary": "#a39ad7",
+                "accent": "#a574c8",
+                "fontFamily": "Arial"
+            }
         },
         {
             "title": "Slide 2",
             "content": "This is the content of slide 2",
             "image": "https://www.w3schools.com/w3images/fjords.jpg",
-            "layout": "image-left"
+            "layout": "image-left",
+            "style": {
+                "text": "#000000",
+                "background": "#f4fbf9",
+                "primary": "#55bca4",
+                "secondary": "#a39ad7",
+                "accent": "#a574c8",
+                "fontFamily": "Arial"
+            }
         },
         {
             "title": "Slide 3",
             "content": "This is the content of slide 3",
             "image": "https://www.w3schools.com/w3images/fjords.jpg",
-            "layout": "image-right"
+            "layout": "image-right",
+            "style": {
+                "text": "#060f0d",
+                "background": "#f4fbf9",
+                "primary": "#55bca4",
+                "secondary": "#a39ad7",
+                "accent": "#a574c8",
+                "fontFamily": "Arial"
+            }
         },
         {
             "title": "Slide 4",
             "content": "This is the content of slide 4",
             "image": "https://www.w3schools.com/w3images/fjords.jpg",
-            "layout": "image-left"
+            "layout": "image-left",
+            "style": {
+                "text": "#060f0d",
+                "background": "#f4fbf9",
+                "primary": "#55bca4",
+                "secondary": "#a39ad7",
+                "accent": "#a574c8",
+                "fontFamily": "Arial"
+            }
         }
-    ],
-    "style": {
-        "text": "#060f0d",
-        "background": "#f4fbf9",
-        "primary": "#55bca4",
-        "secondary": "#a39ad7",
-        "accent": "#a574c8",
-        "fontFamily": "Arial"
-    }
+    ]
 }

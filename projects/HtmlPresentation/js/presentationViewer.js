@@ -44,10 +44,12 @@ function previousSlide(){
 function setStyles(){
     var r = document.querySelector(':root');
 
+    var currentSlide = presentation.slides[slideNumber];
+    console.log(currentSlide);
     // set colors
-    r.style.setProperty('--text', presentation.styles.text);
-    r.style.setProperty('--background', presentation.styles.background);
-    r.style.setProperty('--primary', presentation.styles.primary);
-    r.style.setProperty('--secondary', presentation.styles.secondary);
-    r.style.setProperty('--accent', presentation.styles.accent);
+    r.style.setProperty('--text', currentSlide.style.text);
+    r.style.setProperty('--background', currentSlide.style.background);
+    r.style.setProperty('--primary', currentSlide.style.primary);
+    r.style.setProperty('--secondary', currentSlide.style.secondary);
+    r.style.setProperty('--accent', currentSlide.style.accent);
 }

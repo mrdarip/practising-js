@@ -1,10 +1,11 @@
 // get the parameters from the URL
 var url = new URL(window.location.href);
 var presentationUrl = url.searchParams.get("presentationUrl");
+var slideId = url.searchParams.get("slideId");
 
 var presentation
 
-var slideNumber = 0;
+var slideNumber = slideId ? parseInt(slideId) : 0;
 
 const slideTitle = document.getElementById("slideTitle");
 const slideContent = document.getElementById("slideContent");
@@ -21,6 +22,8 @@ fetch(presentationUrl)
     });
 
 function setSlide(slideNumber){
+    window.history.pushState({}, document.title, "?presentationUrl=" + presentationUrl + "&slideId=" + slideNumber);
+
     var slide = presentation.slides[slideNumber];
         
     setStyles(slide);

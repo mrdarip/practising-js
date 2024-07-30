@@ -6,11 +6,11 @@
             "image": "https://images.unsplash.com/photo-1558642084-fd07fae5282e?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "layout": "image-left",
             "style": {
-                "text": "#999999",
-                "background": "#f4fbf9",
-                "primary": "#55bca4",
-                "secondary": "#a39ad7",
-                "accent": "#a574c8",
+                "text": "#0b011f",
+                "background": "#f5efff",
+                "primary": "#640cfb",
+                "secondary": "#fc7e6a",
+                "accent": "#fcc439",
                 "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
                 "secondaryFont": "'Courier New', Courier, monospace"
             }
@@ -21,11 +21,11 @@
             "image": "https://images.unsplash.com/photo-1641414733919-f9916fee6f1b?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "layout": "image-right",
             "style": {
-                "text": "#999999",
-                "background": "#f4fbf9",
-                "primary": "#55bca4",
-                "secondary": "#a39ad7",
-                "accent": "#a574c8",
+                "text": "#100d1a",
+                "background": "#f6f4fb",
+                "primary": "#5b3dcb",
+                "secondary": "#9f8cea",
+                "accent": "#7253ed",
                 "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
                 "secondaryFont": "'Courier New', Courier, monospace"
             }
@@ -36,11 +36,11 @@
             "image": "https://images.unsplash.com/photo-1587893904933-5b23fefaea6d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "layout": "image-top-title-top",
             "style": {
-                "text": "#999999",
-                "background": "#f4fbf9",
-                "primary": "#55bca4",
-                "secondary": "#a39ad7",
-                "accent": "#a574c8",
+                "text": "#030b0b",
+                "background": "#f5fcfc",
+                "primary": "#42c5b5",
+                "secondary": "#95c4df",
+                "accent": "#6d99d2",
                 "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
                 "secondaryFont": "'Courier New', Courier, monospace"
             }
@@ -51,11 +51,11 @@
             "image": "https://images.unsplash.com/photo-1461937995729-a2e442122d18?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fEJhcmNlbG9uYXxlbnwwfHwwfHx8MA%3D%3D",
             "layout": "image-top-title-left",
             "style": {
-                "text": "#999999",
-                "background": "#f4fbf9",
-                "primary": "#55bca4",
-                "secondary": "#a39ad7",
-                "accent": "#a574c8",
+                "text": "#030b0b",
+                "background": "#f5fcfc",
+                "primary": "#42c5b5",
+                "secondary": "#95c4df",
+                "accent": "#6d99d2",
                 "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
                 "secondaryFont": "'Courier New', Courier, monospace"
             }
@@ -66,11 +66,11 @@
             "image": "https://images.unsplash.com/photo-1593368858664-a7fe556ab936?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "layout": "image-left",
             "style": {
-                "text": "#999999",
-                "background": "#f4fbf9",
-                "primary": "#55bca4",
-                "secondary": "#a39ad7",
-                "accent": "#a574c8",
+                "text": "#020210",
+                "background": "#f5f5fe",
+                "primary": "#2722e2",
+                "secondary": "#ed7c89",
+                "accent": "#eaac61",
                 "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
                 "secondaryFont": "'Courier New', Courier, monospace"
             }
@@ -81,11 +81,11 @@
             "image": "https://images.unsplash.com/photo-1510847617830-672a66b61119?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNwYWluJTIwcm9hZHxlbnwwfHwwfHx8MA%3D%3D",
             "layout": "image-right",
             "style": {
-                "text": "#999999",
-                "background": "#f4fbf9",
-                "primary": "#55bca4",
-                "secondary": "#a39ad7",
-                "accent": "#a574c8",
+                "text": "#090a11",
+                "background": "#fafafc",
+                "primary": "#5f6aa5",
+                "secondary": "#cea8b9",
+                "accent": "#b88c81",
                 "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
                 "secondaryFont": "'Courier New', Courier, monospace"
             }
@@ -96,11 +96,11 @@
             "image": "https://images.unsplash.com/photo-1643106036719-634fe41ecd92?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "layout": "image-left",
             "style": {
-                "text": "#999999",
-                "background": "#f4fbf9",
-                "primary": "#55bca4",
-                "secondary": "#a39ad7",
-                "accent": "#a574c8",
+                "text": "#0f0c09",
+                "background": "#f9f5f1",
+                "primary": "#bc8147",
+                "secondary": "#e2bd98",
+                "accent": "#dd9a58",
                 "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
                 "secondaryFont": "'Courier New', Courier, monospace"
             }

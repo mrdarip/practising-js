@@ -16,13 +16,15 @@ fetch(presentationUrl)
     .then(response => response.json())
     .then(data => {
         presentation = data;
-        setStyles();
+        
         setSlide(slideNumber);
     });
 
 function setSlide(slideNumber){
     var slide = presentation.slides[slideNumber];
         
+    setStyles(slide);
+
     document.title = slide.title;
     slideTitle.innerHTML = slide.title;
     slideContent.innerHTML = slide.content;
@@ -41,11 +43,9 @@ function previousSlide(){
     setSlide(slideNumber);
 }
 
-function setStyles(){
+function setStyles(currentSlide){
     var r = document.querySelector(':root');
 
-    var currentSlide = presentation.slides[slideNumber];
-    console.log(currentSlide);
     // set colors
     r.style.setProperty('--text', currentSlide.style.text);
     r.style.setProperty('--background', currentSlide.style.background);

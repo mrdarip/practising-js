@@ -52,4 +52,8 @@ function setStyles(currentSlide){
     r.style.setProperty('--primary', currentSlide.style.primary);
     r.style.setProperty('--secondary', currentSlide.style.secondary);
     r.style.setProperty('--accent', currentSlide.style.accent);
+
+    // set fonts
+    r.style.setProperty('--primary-font', currentSlide.style.primaryFont);
+    r.style.setProperty('--secondary-font', currentSlide.style.secondaryFont);
 }

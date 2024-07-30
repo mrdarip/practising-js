@@ -11,7 +11,8 @@
                 "primary": "#55bca4",
                 "secondary": "#a39ad7",
                 "accent": "#a574c8",
-                "fontFamily": "Arial"
+                "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
+                "secondaryFont": "'Courier New', Courier, monospace"
             }
         },
         {
@@ -25,7 +26,8 @@
                 "primary": "#55bca4",
                 "secondary": "#a39ad7",
                 "accent": "#a574c8",
-                "fontFamily": "Arial"
+                "primaryFont": "Georgia, 'Times New Roman', Times, serif",
+                "secondaryFont": "'Lucida Console', Monaco, monospace"
             }
         },
         {
@@ -39,7 +41,8 @@
                 "primary": "#55bca4",
                 "secondary": "#a39ad7",
                 "accent": "#a574c8",
-                "fontFamily": "Arial"
+                "primaryFont": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif",
+                "secondaryFont": "'Palatino Linotype', 'Book Antiqua', Palatino, serif"
             }
         },
         {
@@ -53,7 +56,8 @@
                 "primary": "#55bca4",
                 "secondary": "#a39ad7",
                 "accent": "#a574c8",
-                "fontFamily": "Arial"
+                "primaryFont": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif",
+                "secondaryFont": "'Palatino Linotype', 'Book Antiqua', Palatino, serif"
             }
         }
     ]

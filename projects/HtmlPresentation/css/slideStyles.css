@@ -25,6 +25,14 @@ body{
     object-fit: cover;
 }
 
+#slideTitle{
+    font-family: var(--primary-font);
+}
+
+#slideContent{
+    font-family: var(--secondary-font);
+}
+
 /* ======
 LAYOUTS 
 ====== */

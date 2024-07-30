@@ -9,3 +9,12 @@
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Open Sans', sans-serif;
 }
+
+body{
+    font-family: var(--primary-font);
+    color: var(--text);
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

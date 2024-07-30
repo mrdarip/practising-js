@@ -1,9 +1,24 @@
 {
     "slides": [
         {
-            "title": "Slide 1",
-            "content": "This is the content of slide 1",
-            "image": "https://www.w3schools.com/w3images/fjords.jpg",
+            "title": "My hollydays in Spain",
+            "content": "Hope you enjoy!",
+            "image": "https://images.unsplash.com/photo-1558642084-fd07fae5282e?q=80&w=436&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "layout": "image-left",
+            "style": {
+                "text": "#999999",
+                "background": "#f4fbf9",
+                "primary": "#55bca4",
+                "secondary": "#a39ad7",
+                "accent": "#a574c8",
+                "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
+                "secondaryFont": "'Courier New', Courier, monospace"
+            }
+        },
+        {
+            "title": "First day in Spain, Madrid",
+            "content": "I visited the center of Madrid, the Puerta del Sol, the Plaza Mayor and the Royal Palace. I also went to the Prado Museum and the Retiro Park.",
+            "image": "https://images.unsplash.com/photo-1641414733919-f9916fee6f1b?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "layout": "image-right",
             "style": {
                 "text": "#999999",
@@ -16,49 +31,80 @@
             }
         },
         {
-            "title": "Slide 2",
-            "content": "This is the content of slide 2",
-            "image": "https://www.w3schools.com/w3images/fjords.jpg",
-            "layout": "image-left",
+            "title": "On the plane to Barcelona",
+            "content": "This plane looks kind of scary, it's completelly dark outside too!",
+            "image": "https://images.unsplash.com/photo-1587893904933-5b23fefaea6d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "layout": "image-top",
             "style": {
-                "text": "#000000",
+                "text": "#999999",
                 "background": "#f4fbf9",
                 "primary": "#55bca4",
                 "secondary": "#a39ad7",
                 "accent": "#a574c8",
-                "primaryFont": "Georgia, 'Times New Roman', Times, serif",
-                "secondaryFont": "'Lucida Console', Monaco, monospace"
+                "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
+                "secondaryFont": "'Courier New', Courier, monospace"
             }
         },
         {
-            "title": "Slide 3",
-            "content": "This is the content of slide 3",
-            "image": "https://www.w3schools.com/w3images/fjords.jpg",
+            "title": "Barcelona's beach!",
+            "content": "I went to the beach and it was amazing! The water was so clear and the sand was so soft.",
+            "image": "https://unsplash.com/es/fotos/gente-en-la-playa-de-arena-marron-akvIvA4ZEeg",
+            "layout": "image-top-title-left",
+            "style": {
+                "text": "#999999",
+                "background": "#f4fbf9",
+                "primary": "#55bca4",
+                "secondary": "#a39ad7",
+                "accent": "#a574c8",
+                "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
+                "secondaryFont": "'Courier New', Courier, monospace"
+            }
+        },
+        {
+            "title": "Park Güell",
+            "content": "I visited the Park Güell and it was amazing! The architecture was so unique and the view was breathtaking.",
+            "image": "https://images.unsplash.com/photo-1593368858664-a7fe556ab936?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "layout": "image-left",
+            "style": {
+                "text": "#999999",
+                "background": "#f4fbf9",
+                "primary": "#55bca4",
+                "secondary": "#a39ad7",
+                "accent": "#a574c8",
+                "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
+                "secondaryFont": "'Courier New', Courier, monospace"
+            }
+        },
+        {
+            "title": "On the road to Valencia",
+            "content": "I took a road trip to Valencia and the view was amazing! The mountains were so beautiful and the sky was so clear.",
+            "image": "https://images.unsplash.com/photo-1510847617830-672a66b61119?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNwYWluJTIwcm9hZHxlbnwwfHwwfHx8MA%3D%3D",
             "layout": "image-right",
             "style": {
-                "text": "#060f0d",
+                "text": "#999999",
                 "background": "#f4fbf9",
                 "primary": "#55bca4",
                 "secondary": "#a39ad7",
                 "accent": "#a574c8",
-                "primaryFont": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif",
-                "secondaryFont": "'Palatino Linotype', 'Book Antiqua', Palatino, serif"
+                "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
+                "secondaryFont": "'Courier New', Courier, monospace"
             }
         },
         {
-            "title": "Slide 4",
-            "content": "This is the content of slide 4",
-            "image": "https://www.w3schools.com/w3images/fjords.jpg",
+            "title": "Random picture of me in Valencia",
+            "content": "Hi grandma, it's me! I'm in Valencia!",
+            "image": "https://images.unsplash.com/photo-1643106036719-634fe41ecd92?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "layout": "image-left",
             "style": {
-                "text": "#060f0d",
+                "text": "#999999",
                 "background": "#f4fbf9",
                 "primary": "#55bca4",
                 "secondary": "#a39ad7",
                 "accent": "#a574c8",
-                "primaryFont": "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif",
-                "secondaryFont": "'Palatino Linotype', 'Book Antiqua', Palatino, serif"
+                "primaryFont": "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif",
+                "secondaryFont": "'Courier New', Courier, monospace"
             }
         }
+        
     ]
 }

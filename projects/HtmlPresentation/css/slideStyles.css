@@ -18,3 +18,33 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+#slideImage{
+    width: 190%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ======
+LAYOUTS 
+====== */
+
+#slideImage { grid-area: slideImage; }
+#slideContent { grid-area: slideContent; }
+#slideTitle { grid-area: slideTitle; }
+#nextButton { grid-area: nextButton; }
+#prevButton { grid-area: prevButton; }
+
+.image-right {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: min-content 1fr; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+      "slideTitle slideImage"
+      "slideContent slideImage"
+      "prevButton nextButton"; 
+  }
+
+  

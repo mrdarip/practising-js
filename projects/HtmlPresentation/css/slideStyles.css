@@ -32,12 +32,27 @@ main{
 
 #slideTitle{
     font-family: var(--primary-font);
+    color: var(--primary);
 
     margin: 0px;
 }
 
 #slideContent{
     font-family: var(--secondary-font);
+    color: var(--secondary);
+}
+
+#nextButton, #prevButton{
+    background-color: var(--accent);
+    color: var(--background);
+    border: none;
+    border-radius: 1em;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#nextButton:hover, #prevButton:hover{
+    background-color: var(--primary);
 }
 
 /* ======

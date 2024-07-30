@@ -32,6 +32,8 @@ main{
 
 #slideTitle{
     font-family: var(--primary-font);
+
+    margin: 0px;
 }
 
 #slideContent{

@@ -11,6 +11,8 @@ const slideTitle = document.getElementById("slideTitle");
 const slideContent = document.getElementById("slideContent");
 const slideImage = document.getElementById("slideImage");
 const slideSurface = document.getElementById("slideSurface");
+const nextButton = document.getElementById("nextButton");
+const previousButton = document.getElementById("prevButton");
 
 // Load the presentation json
 fetch(presentationUrl)
@@ -34,17 +36,32 @@ function setSlide(slideNumber){
     slideImage.src = slide.image;
 
     slideSurface.className = slide.layout;
+
+    if(slideNumber >= presentation.slides.length - 1){
+        nextButton.style.display = "none";
+    } else {
+        nextButton.style.display = "block";
+    }
+
+    if(slideNumber <= 0){
+        previousButton.style.display = "none";
+    } else {
+        previousButton.style.display = "block";
+    }
 }
 
-function nextSlide(){
+
+
+nextButton.addEventListener("click", function(){
     slideNumber++;
     setSlide(slideNumber);
-}
+});
 
-function previousSlide(){
+
+previousButton.addEventListener("click", function (){
     slideNumber--;
     setSlide(slideNumber);
-}
+});
 
 function setStyles(currentSlide){
     var r = document.querySelector(':root');
